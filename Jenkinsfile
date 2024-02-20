@@ -1,6 +1,9 @@
 pipeline {
     agent any
-    
+    tools {
+        gradle '7.3'
+        //jave '14.1'
+    }
     stages {
         stage('Checkout') {
             steps {
