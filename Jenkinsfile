@@ -30,8 +30,7 @@ pipeline {
         stage('Print Versions') {
             steps {
                 script {
-                    // Print Gradle version
-                    sh 'gradle --version'
+                    sh "/var/lib/jenkins/.gradle/wrapper/dists/gradle-6.4.1-all/13imxtezgn9nwzqt8rgtkunh1/gradle-6.4.1/bin/gradle --version"
                     
                     // Print Java version
                     sh 'java -version'
@@ -40,3 +39,4 @@ pipeline {
         }
     }
 }
+
