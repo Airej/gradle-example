@@ -5,6 +5,12 @@ pipeline {
         //jave '14.1'
     }
     stages {
+        stage('Checking versions') {
+            steps {
+                java -version
+                gradle -version
+            }
+        }
         stage('Build') {
             steps {
                 // Run Gradle build using gradlew script
@@ -36,4 +42,3 @@ pipeline {
 //         }
 //     }
 // }
-
