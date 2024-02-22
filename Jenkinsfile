@@ -7,8 +7,8 @@ pipeline {
     stages {
         stage('Checking versions') {
             steps {
-                java -version
-                gradle -version
+                sh 'java -version'
+                sh 'gradle -version'
             }
         }
         stage('Build') {
