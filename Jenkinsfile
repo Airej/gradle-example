@@ -1,9 +1,9 @@
 pipeline {
     agent any
-    // tools {
-    //     //gradle 'GRADLE_HOME_7.3'
-    //     //jave '14.1'
-    // }
+    tools {
+        gradle 'GRADLE_HOME_7.3'
+        //jave '14.1'
+    }
     stages {
         stage('Checking versions') {
             steps {
