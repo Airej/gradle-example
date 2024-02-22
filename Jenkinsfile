@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         gradle 'GRADLE_HOME_7.3'
-        jdk 'jdk-11.0.1'
+        jdk 'JDK-my'
     }
     stages {
         stage('Checking versions') {
