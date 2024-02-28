@@ -14,9 +14,9 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Gradle build using gradlew script
-                // h './gradlew build'
-                sh './gradlew shadowJar'
-                sh 'java -jar build/libs/gradle-example-all.jar'
+                sh './gradlew build'
+                // sh './gradlew shadowJar'
+                // sh 'java -jar build/libs/gradle-example-all.jar'
             }
         }
         // stage('Test') {
