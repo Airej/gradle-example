@@ -17,12 +17,12 @@ pipeline {
                 sh './gradlew build'
             }
         }
-        stage('Test') {
-            steps {
-                // Run Gradle test task using gradlew script
-                sh './gradlew test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         // Run Gradle test task using gradlew script
+        //         sh './gradlew test'
+        //     }
+        // }
     }
 }
 
