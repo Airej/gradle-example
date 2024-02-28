@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        gradle 'GRADLE_HOME_7.3'
+        gradle 'GRADLE_HOME_8.7'
         jdk 'JDK-my'
     }
     stages {
