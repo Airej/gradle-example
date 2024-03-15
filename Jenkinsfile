@@ -11,6 +11,14 @@ pipeline {
                 sh 'gradle -version'
             }
         }
+
+        stage('Test') {
+            steps {
+                // Run Gradle test task using gradlew script
+                sh './gradlew test'
+            }
+        }
+
         stage('Build') {
             steps {
                 // Run Gradle build using gradlew script
@@ -19,12 +27,7 @@ pipeline {
                 sh 'java -jar build/libs/gradle-example-all.jar'
             }
         }
-        stage('Test') {
-            steps {
-                // Run Gradle test task using gradlew script
-                sh './gradlew test'
-            }
-        }
+
     }
 }
 
